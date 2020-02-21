@@ -2,36 +2,14 @@ import React from 'react';
 import jsxToString from '../src/index';
 import test from 'tape';
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-});
+let Basic = () => <div />;
 
-let DefaultProp = React.createClass({
+let DefaultProp = () => <div />;
+DefaultProp.defaultProps = {
+  test2: 'abc'
+};
 
-  getDefaultProps() {
-    return {
-      test2: 'abc'
-    };
-  },
-
-  render() {
-    return (
-      <div />
-    );
-  }
-});
-
-let BasicChild = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-});
+let BasicChild = () => <div />;
 
 test('test a basic react component', function(t) {
   t.plan(1);

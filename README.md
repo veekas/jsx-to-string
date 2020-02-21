@@ -17,13 +17,7 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 // or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-}); //this is your react component
+let Basic = <div />; //this is your react component
 
 console.log(jsxToString(<Basic test1="test" />)); //outputs: <Basic test1="test" />
 ```
@@ -44,13 +38,8 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 //or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-}); //this is your react component
+let Basic = <div />; //this is your react component
+
 
 let _onClickHandler = function () {
   //no-op
@@ -72,13 +61,7 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 //or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-render() {
-  return (
-    <div />
-  );
-}
-}); //this is your react component
+let Basic = <div />; //this is your react component
 
 let _onClickHandler = function () {
 //no-op
@@ -98,13 +81,7 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 //or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-}); //this is your react component
+let Basic = <div />; //this is your react component
 
 let _onClickHandler = function () {
   //no-op
@@ -125,13 +102,7 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 //or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-}); //this is your react component
+let Basic = <div />; //this is your react component
 
 console.log(jsxToString(<Basic test1="ignore" />, {
   ignoreProps: ['test1']
@@ -147,13 +118,7 @@ import React from 'react';
 import jsxToString from 'jsx-to-string';
 //or var jsxToString = require('jsx-to-string');
 
-let Basic = React.createClass({
-  render() {
-    return (
-      <div />
-    );
-  }
-}); //this is your react component
+let Basic = <div />; //this is your react component
 
 console.log(jsxToString(<Basic test1="ignore" />, {
   displayName: 'CustomName'
